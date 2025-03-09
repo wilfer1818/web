@@ -1,0 +1,69 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcarr</title>
+    <link rel="stylesheet" href="css/styles1.css">
+<!DOCTYPE html>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let images = document.querySelectorAll(".carousel img");
+            let index = 0;
+            setInterval(() => {
+                images[index].classList.remove("active");
+                index = (index + 1) % images.length;
+                images[index].classList.add("active");
+            }, 3000);
+        });
+    </script>
+</head>
+<body>
+    <div class="header">ARCARR</div>
+    <div class="nav">
+        <a href="#">Categorías</a>
+        <a href="#">Red de Agencias</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Fidelidad</a>
+        <a href="#">Empresas</a>
+        <a href="#">Ayuda</a>
+        <div class="login">
+            <a href="login.html"><button>Login</button></a>
+        </div>
+    </div>
+  
+    <div class="carousel">
+        <img src="img/download.jpg" class="active">
+        <img src="img/images.jpg">
+        <img src="img/images (1).jpeg">
+    </div>
+    <div class="content">
+        <h2>Alquiler de Carros en Medellín, Colombia</h2>
+        <p>Conoce algunas de nuestras agencias:</p>
+        <div class="locations">
+            <div class="location">Aero Inter Jose M. Cordoba Medellín</div>
+            <div class="location">La 4 Sur - Medellín</div>
+            <div class="location">Rionegro - Medellín</div>
+            <div class="location">Agencia Medellín Industriales</div>
+            <div class="location">Medellín Éxito Colombia</div>
+        </div>
+    </div>
+    <div class="offers">
+        <div class="offer">
+            <img src="img/images (1).jpeg">
+            <p>Auto Sedán - $50/día</p>
+        </div>
+        <div class="offer">
+            <img src="img/images (2).jpeg">
+            <p>SUV Familiar - $80/día</p>
+        </div>
+        <div class="offer">
+            <img src="img/images.jpeg">
+            <p>Deportivo - $120/día</p>
+        </div>
+    </div>
+   
+    <div class="footer">© 2025 Renta de Autos - Todos los derechos reservados</div>
+</body>
+</html>

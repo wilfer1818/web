@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renta de Autos</title>
+    <link rel="stylesheet" href="css/ingle.css">
+    
+    <script>
+        function selectCar(imageSrc, price) {
+            document.getElementById("selected-car").src = imageSrc;
+            document.getElementById("selected-price").innerText = `Precio: ${price} por día`;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div>Renta de Autos</div>
+        <div class="user-menu" tabindex="0">
+            <img src="img/gratis-png-icono-de-perfil-icono-de-usuario-en-un-circulo-thumbnail.png" alt="Usuario">
+            <div class="user-options">
+                <a href="#">Historial</a>
+                <a href="#">Ajustes</a>
+                <a href="index.html">Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+    <div class="rent-section">
+        <h3>Carro Seleccionado</h3>
+        <img id="selected-car" src="" style="width: 100%; border-radius: 10px;">
+        <p id="selected-price">Precio: </p>
+        <input type="number" placeholder="Días de arriendo">
+        <button>Confirmar Arriendo</button>
+    </div>
+    <h2>Selecciona un carro</h2>
+    <div class="offers">
+        <div class="offer" onclick="selectCar('car1.jpg', '$50')">
+            <img src="car1.jpg">
+            <p>Auto Sedán - $50/día</p>
+        </div>
+        <div class="offer" onclick="selectCar('car2.jpg', '$80')">
+            <img src="car2.jpg">
+            <p>SUV Familiar - $80/día</p>
+        </div>
+        <div class="offer" onclick="selectCar('car3.jpg', '$120')">
+            <img src="car3.jpg">
+            <p>Deportivo - $120/día</p>
+        </div>
+    </div>
+    <div class="footer">© 2025 Renta de Autos - Todos los derechos reservados</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+ 
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="stylesheet" href="css/styles.css">
+     <script>
+         function login() {
+             let user = document.getElementById("username").value;
+             let password = document.getElementById("password").value;
+             
+             // Simulación de credenciales
+             let users = {
+                 "admin": "admin123",
+                 "usuario": "user123",
+                 "moderador": "mod123"
+             };
+             
+             if (users[user] && users[user] === password) {
+                 if (user === "admin") {
+                     window.location.href = "admin.html";
+                 } else if (user === "moderador") {
+                     window.location.href = "moderador.html";
+                 } else {
+                     window.location.href = "ingre.html";
+                 }
+             } else {
+                 alert("Usuario o contraseña incorrectos");
+             }
+         }
+     </script>
+ </head>
+ <body>
+     <div class="login-container">
+         <h2>Iniciar Sesión</h2>
+         <input type="text" id="username" class="input-field" placeholder="Usuario o Correo">
+         <input type="password" id="password" class="input-field" placeholder="Contraseña">
+         <button class="login-button" onclick="login()">Ingresar</button>
+         <a href="registro.html"><button class="register-button"  >Registrarse</button></a>
+         <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+         
+     </div>
+ </body>
+ </html>
+ 
