@@ -41,3 +41,16 @@ body {
 .register-button:hover {
     background-color: #7a1fc8;
 }
+@media (max-width: 400px) {
+    .register-container {
+        padding: 20px;
+    }
+
+    .input-field {
+        padding: 8px;
+    }
+
+    .register-button {
+        padding: 8px;
+    }
+}

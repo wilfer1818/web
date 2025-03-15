@@ -106,3 +106,47 @@ body {
     width: 100%;
     margin-top: auto;
 }
+@media (max-width: 768px) {
+    .header {
+        font-size: 20px;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-menu {
+        margin-top: 10px;
+    }
+
+    .offers {
+        width: 100%;
+    }
+
+    .offer {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .rent-section {
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .rent-section {
+        padding: 15px;
+    }
+
+    .rent-section input {
+        padding: 8px;
+    }
+
+    .rent-section button {
+        padding: 8px;
+    }
+
+    .offer {
+        width: 95%;
+    }
+}

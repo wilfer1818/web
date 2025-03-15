@@ -51,3 +51,15 @@ body {
 .forgot-password:hover {
     text-decoration: underline;
 }
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px;
+    }
+    .input-field {
+        font-size: 14px;
+    }
+    .login-button, .register-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

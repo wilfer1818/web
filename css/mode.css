@@ -99,3 +99,43 @@ body {
     height: auto;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 20px;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-menu {
+        margin-top: 10px;
+    }
+
+    .cars-list {
+        width: 100%;
+    }
+
+    .car-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .add-car-form {
+        padding: 15px;
+    }
+
+    .add-car-form input {
+        padding: 8px;
+    }
+
+    .add-car-form button {
+        padding: 8px;
+    }
+
+    .car-card {
+        width: 95%;
+    }
+}
